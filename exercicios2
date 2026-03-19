@@ -1,0 +1,115 @@
+# num1 = float(input('Escreva um número: '))
+# num2 = float(input('Escreva outra número: '))
+# soma = num1 + num2
+# media = (num1 + num2 ) / 2
+# print (f"A soma entre: {num1} e {num2} é igual a {soma} já a sua média é: {media}")
+
+# exercicio de valores lógicos
+# a = 2
+# b = 3
+# c = 5
+# print (~(a==b) ^ (c>a))
+
+# exercicio de precedencial geral com triangulo
+# inicio = print ('Vamos vê se o triângulo é equilátero ou escaleno: ')
+# l1 = float(input('Digite um ângulo: '))
+# l2 = float(input('Digite o segundo ângulo: '))
+# l3 = float(input('Digite o treceiro ângulo: '))
+# eq = (l1 == l2) and  (l2 == l3)
+# es = (l1!=l2) and (l2!=l3) and (l1!=l3)
+# tri = l1 < (l2 + l3) and l2 < (l1 + l3) and l3 < (l1 + l2)
+
+# print (f'Pode forma um triângulo?: {tri}')
+# print (f'O triângulo é equilatero? {eq}  \n O triângulo é escaleno? {es}')
+
+# creuza nascimento
+# ano_de_nascimmento = int (input('Em qua ano estamos?: '))
+# ano_atual = int(input('En qual ano eu nasci?: '))
+# idade = (ano_atual - ano_de_nascimmento)
+# print (f"Minha idade é {idade}")
+
+
+# ELe quer um programa de parcelamento com juros
+
+# num1 = float(input("Qual o valor do emprestimo?: "))
+# num2 = float(input('Quantas parcelas?: '))
+# if num2 < 5:
+#    juros = 0.10
+# elif num2 > 5:
+#   juros = 0.15
+# else:
+#   juros = 0.20
+# parcela = (num1 * (1 + juros)) / num2
+# print(f"O valor da parcela é {parcela:.2f}")
+
+# Condicionais
+
+# num1 = int(input('Digite a sua idade: '))
+# num2 = int(input('Digite o ano que você nasceu: '))
+# idade = num1
+# if idade > 18:
+#    print("Você é maior de idade.")
+# else:
+#  print('Você não é maior de idade.')
+
+
+# num1 = int(input('Digite um numero para saber se ele é impar ou par: '))
+
+# if num1 % 2 == 0:
+#    print('O numero é par')
+# else:
+#     print('é impar')
+
+# verificar se está aprovado ou não
+
+# ota1 = float(input('Digite a sua primeira nota: '))
+# nota2 = float(input('Digite a segunda nota: '))
+# ota3= float(input('Digite a terceira nota: '))
+# freq = float(input('Digite a sua frequencia: '))
+# media = (nota1 + nota2 + nota3) / 3
+
+# if media > 7 and freq > 0.75:
+#   print('Parabens voce passou')
+# elif media < 6 and freq > 0.5:
+#    print('Voce esta de recuperação')
+# else:
+#    print('Você reprovou estude mais.')
+
+# fazer o imc
+# peso = float(input('Digite seu peso: '))
+# altura = float(input('Digite a sua altura: '))
+# imc = peso / (altura ** 2)
+# print(f'O seu imc é {imc:.2f}')
+
+# if imc >= 18.5 and imc < 25:#
+#    print('Você está na media')
+# else:
+#   print('Você não está na média')
+
+
+# fazer uma avaliação da cadeia alimentar
+p1 = input().strip()
+p2 = input().strip()
+p3 = input().strip()
+
+if p1 == 'vertebrado':
+    if p2 == 'ave':
+        if p3 == 'carnivoro':
+            print('aguia')
+elif p3 == 'onivoro':
+    print('pomba')
+elif p2 == 'mamífero':
+    if p3 == 'onivor':
+        print('homem')
+    elif p3 == 'herbivoro':
+        print('vaca')
+elif p1 == 'invertebrado':
+    if p2 == 'inseto':
+        if p3 == 'hematofago':
+            print('pulga')
+        elif p3 == 'herbivoro':
+            print('largata')
+elif p2 == 'hematofogo':
+    print('sanguesuga')
+elif p3 == 'onivoro':
+    print('minhoca')
